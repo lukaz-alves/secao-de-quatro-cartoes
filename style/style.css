@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-supervisor: hsl(180, 62%, 55%);
+    --card-team-builder: hsl(212, 86%, 64%);
+    --card-karma: hsl(34, 97%, 64%);
+    --card-calculator: hsl(212, 86%, 64%);
+    --cor-do-texto: hsl(212, 6%, 44%);
+    --cor-de-destaque: hsl(234, 12%, 34%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', arial, georgia;
+    font-size: 15px;
+    color: var(--cor-do-texto);
+}
+
+h1 {
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+h2 {
+    color: var(--cor-de-destaque);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p.descricao {
+    margin: 0px 90px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    position: relative;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.199);
+    margin: 30px;
+}
+
+section>h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 40px 0px 8px 40px;
+}
+
+section>p {
+    margin: 0px 40px;
+}
+
+section>img {
+    position: absolute;
+    top: 12em;
+    left: 18em;
+}
