@@ -1,7 +1,45 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1290px) {
     main {
-
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 0rem;
+        justify-items: center;
+        align-items: center;
+        margin: 2rem auto;
+        max-width: 1200px;
     }
 
-    
+    main>section {
+        width: 350px;
+        height: 250px;
+    }
+
+    main>section>img {
+        top: auto;
+        bottom: 30px;
+        left: auto;
+        right: 30px;
+    }
+
+    main>section.supervisor {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    main>section.builder {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    main>section.karma {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    main>section.calculator {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
 }
